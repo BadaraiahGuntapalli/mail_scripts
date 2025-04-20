@@ -1,3 +1,12 @@
+/* File to send to mail to multiple users using Google Sheets
+  - Send mail to multiple users
+  - assume the data in Google Sheets 
+  - Google sheet column 1 -> mail id
+                 column 2 -> roll number 
+                 column 3 -> message 
+*/
+
+
 function sendFeedbackEmails() {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
   var data = sheet.getDataRange().getValues(); // Get all rows
